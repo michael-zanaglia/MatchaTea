@@ -1,0 +1,39 @@
+body{
+    width: auto;
+    margin: 50px 150px 0px 150px ;
+}
+main{
+    background-color:#F9F9F9;
+    margin-top: 12rem;
+}
+#images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.title{
+    text-align: center;
+    color: rgb(211, 84, 84);
+    font-family: American Typewriter, serif;
+    font-size: 20px;
+}
+#images > img {
+    padding-left: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        margin: auto ;
+        max-width: 768px;
+    }
+    #images{
+        grid-template-columns: 1fr;
+        margin: 0px 15px 15px 15px;
+    }
+     .about > p{
+        padding: 10px;
+        text-align: justify;
+     }
+ 
+  }

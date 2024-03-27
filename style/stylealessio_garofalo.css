@@ -1,0 +1,229 @@
+/* FONT */
+/* pour donnes le font dans html: 
+<h1 class="classe_primary [espace] .salsa-regular"> Ciao </h1> */
+.salsa-regular {
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;    
+}
+
+/* CONTACT NOUS */
+.section_contact_nous{
+    position: static;
+    margin: 12rem auto 5%;
+    max-width: 80rem;
+    font-style: italic;
+    background-color:#78ae6ca1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    border: 3px solid #78ae6cc0;
+}
+
+.choix{
+    margin: 5%;
+}
+
+.title_contact{
+    margin-top: 15%;
+}
+
+.selection{
+    margin: 2%;
+    width: 50%;
+    height: 30px;
+}
+
+.selection:hover{
+    background-color: #78ae6ca1;
+    color: #ffffff;
+}
+
+#contact_message{
+    margin-top: -2%;
+    padding: 5%;
+    width: 50%;
+    height: auto;
+}
+
+.checkbox{
+    padding: 0 30px 0 5px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.submit{
+    width: 40px;
+    height: 40px;
+
+}
+
+.submit1{
+    padding: 20px;
+    margin: 30px;
+    color: #000000;
+}
+
+.submit1:hover{
+color: #ffffff;
+background-color: #639758;
+}
+
+
+
+
+
+/* main */
+
+main{
+    position: static; /* Per consentire il posizionamento assoluto all'interno di main */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+}
+
+
+
+.img_profile{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+}
+
+.img_profile:hover{
+    transform: scale(4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%; 
+    transition: transform 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+    background-color: #00000070;
+}
+
+.img_profile:not(:hover) {
+    transition: transform 1.5s ease, background-color 1.5s ease, color 1.5s ease;
+    box-shadow: none; 
+    border-radius: 50%; 
+}
+
+.info_perso{
+    margin-top: 12rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+  
+}
+
+.personnel{
+    display: grid;
+    grid-template-columns: 30% 1fr 10%;
+
+}
+.num {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    align-items: center; 
+}
+.num1{
+    grid-column: 2;
+}
+.prefix {
+    grid-column: 3; /* Posiziona il prefix nella seconda colonna */
+    font-size: 12px;
+}
+
+.label{
+grid-column: 1;
+place-self: center;
+padding: 0;
+
+}
+
+.selection{
+grid-column: 2;
+padding: 0;
+margin: 5%;
+width: 200px;
+}
+
+@media screen and (max-width: 502px) {
+    .selection {
+        margin: 6%;
+        width: 150px;
+    }
+    .submit{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+.btn{
+    font-size: 10px;
+    grid-column: 3;
+    height: 30px;
+    width: 30px;
+    padding: 5%;
+    place-self: center;
+    background-image: url(../graphique/profil/icons8-engrenage-32.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    margin: 0 0 0 -30px; 
+}
+.btn:hover{
+    opacity: 0.5;
+}
+
+.checkbox{
+    padding: 30px;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.submit{
+    padding: 25px;
+    margin-top: 10px;
+}
+
+.submit1{
+    padding: 10px;
+    margin-top: 80px;
+}
+
+
+.layer {
+    position: relative; /* Assicura che i figli posizionati all'interno siano posizionati relativamente */
+    width: 100%; /* Larghezza desiderata dello strato di pagina */
+    height: 400px; /* Altezza desiderata dello strato di pagina */
+    margin: 2% auto; /* Centra lo strato di pagina */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1); /* Ombra interna con un raggio di 10px e colore nero */
+}
+  
+.image_intersection {
+    width: 100%; /* Larghezza del contenitore al 100% dello strato di pagina */
+    height: 100%; /* Altezza del contenitore al 100% dello strato di pagina */
+    overflow: hidden; /* Nasconde le parti in eccesso dell'immagine */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1); /* Ombra interna con un raggio di 10px e colore nero */
+    background-image: url("../graphique/profil/Photo_back.jpg");
+    background-size: cover;
+    transition: transform 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+}
+.image_intersection:hover{
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 1);
+    transition: transform 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+}
+.info_public{
+margin: 0;    
+}
+

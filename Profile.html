@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Matcha Tea</title>
+
+    <link rel="stylesheet" href="style/stylealessio_garofalo.css">
+    <link rel="stylesheet" href="style/navbar_aleG.css">
+    <link rel="stylesheet" href="style/footer_mika.css">
+
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu_drop_down">
+            <input type="checkbox" id="touch">
+            <label for="touch" class="menu_label">
+                <img class="menu_drop_down_img" src="GRAPHIC\ICO\menu.png" alt="Menu_icon">
+            </label>    
+            <ul class="menu_drop_down_child">
+                <li><a class="salsa-regular" href="shop.html">Shop</a></li>
+                <li><a class="salsa-regular" href="apropos.html">About us</a></li>
+                <li><a class="salsa-regular" href="histoire.html">Notre histoire</a></li>
+                <li><a class="salsa-regular" href="contactnous.html">Nous contacter</a></li>
+            </ul>
+        </div>
+    
+    
+    
+            <div class="logo">
+                <img src="GRAPHIC/LOGO/logo.png" width="150px" alt="Logo Matcha Tea Team">
+            </div>
+            <div class="right_nav">    
+                <a href="index.html"><img src="GRAPHIC\ICO\home.png" alt="home_icon"></a>
+                <a href="shop.html"> <img src="GRAPHIC\ICO\shop.png" alt="shop_icon"></a>
+                <a href="user.html"> <img src="GRAPHIC\ICO\user.png" alt="user_icon"></a>
+            </div>
+        </nav>
+    
+    <!-- iMAGE NOM -->
+    <main>
+        <section class="info_perso">
+            <h1 class="salsa-regular">Informations personnelles</h1>
+            <div><img class="img_profile" src="graphique/profil/profil_img.png" alt="img profile"></div>
+            <div class="personnel">
+                    <label class="label salsa-regular" for="name">Nom</label>
+                    <input class="selection" type="text" name="nom" id="nom">
+                    <input class="btn" type="button" value="Changer Nom">
+                    
+                    <label class="label salsa-regular" for="surname">Prenom</label>
+                    <input class="selection" type="text" name="prenom" id="surname">
+                    <input class="btn" type="button" value="Changer PreNom">
+                    
+                    <label class="label salsa-regular" for="address">Address</label>
+                    <input class="selection" type="text" name="address" id="address">
+                    <input class="btn" type="button" value="Changer Address">
+                    
+                    <label class="label salsa-regular" for="email">Email</label>
+                    <input class="selection" type="email" name="email" id="email">
+                    <input class="btn" type="button" value="Changer Email">
+                    
+                    <div class="num">
+                        <label class="num1 salsa-regular" for="tel">Numero</label>
+                        <p class="prefix salsa-regular">+33</p>
+                    </div>
+                    <input class="selection" type="tel" name="tel" id="tel" placeholder="
+                    Entrez votre numéro">
+                    <input class="btn" type="button" value="Changer Numero">
+                    
+                    <label class="label salsa-regular" for="naissance">Date de naissance:</label>
+                    <input class="selection" type="date" id="dateN" name="dateN">
+                    <input class="btn" type="button" value="Changer Date">
+                    
+                    <label for="sexe-select" class="label salsa-regular">Sexe:</label>
+                    <select name="sexe" id="sexe_selection" class="selection">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="garçon">Garçon</option>
+                        <option value="fille">Fille</option>
+                        <option value="personnel">Sans réponse</option>
+                    </select>
+                    <input class="btn" type="button" value="Changer Sexe">
+                    
+                    <label for="Situation_familiale salsa-regular" class="label  salsa-regular">Sélectionner votre situation:</label>
+                    <select class="selection" id="family_select" name="family">
+                        <option value="" >--Please choose an option--</option>
+                        <option value="1">Célibataire</option>
+                        <option value="2">Concubinage</option>
+                        <option value="3">Pacsé</option>
+                        <option value="4">Marié</option>
+                        <option value="5">Veuf</option>
+                        <option value="6">Divorcé</option>
+                        <option value="7">Sans réponse</option>
+                    </select>
+                    <input class="btn" type="button" value="Changer Situation">
+            </div>
+        </section>
+        <section class="layer">
+            <div class="image_intersection">
+                <!-- <img class="foto" src="graphique/profil/Photo_back.jpg" alt="Photo_coltivation_matcha"> -->
+            </div>
+        </section>
+        <section class="info_public">
+            
+            <div>
+                <h1 for="Bio" class="title_contact2 salsa-regular">Bio</h1> 
+                <textarea name="contact" id="Bio"></textarea>
+            </div>
+            
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="logo-footer">
+            <img src="GRAPHIC/LOGO/logo-removebg-preview.png" alt="Logo Matcha Tea">
+        </div>
+        <div class="payment">
+            <img src="GRAPHIC/ICO/icons8-paypal-50.png" alt="paypal">
+            <img src="GRAPHIC/ICO/icons8-master-card-100.png" alt="master card">
+            <img src="GRAPHIC/ICO/icons8-recto-de-carte-de-crédit-50.png" alt="carte de crédit">
+        </div>
+    </footer>
+
+</body>
+</html>
